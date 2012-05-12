@@ -1,0 +1,21 @@
+<workspace>
+    <version>1</version>
+    <filesettings>
+        <file>
+            <name>${PROJECT_PATH}/footswitch.c</name>
+            <cursorlinenumber>108</cursorlinenumber>
+            <viewlinenumber>143</viewlinenumber>
+        </file>
+        <breakpoints/>
+        <watcheditems>
+            <tabname>Globals</tabname>
+            <vars>
+                <name>drive_line</name>
+                <name>btn_state_now</name>
+            </vars>
+        </watcheditems>
+        <memoryaddresses>
+            <address>0x0000</address>
+        </memoryaddresses>
+    </filesettings>
+</workspace>
