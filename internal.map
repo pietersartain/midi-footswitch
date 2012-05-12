@@ -1,0 +1,13 @@
+;=============================================================================
+; Cyan Technology Ltd
+; Example application software for eCOG
+;
+; FILE
+;  internal.map
+;
+; DESCRIPTION
+;  Demonstration architecture description file.
+;=============================================================================
+code 0 77ff irom 0000 77ff
+data 0 7ff irom 7800 7fff
+data e800 efff iram 0 7ff
