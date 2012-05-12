@@ -71,7 +71,7 @@ int_uart_a_rx_rdy               DC $minimal_handler
 int_uart_b_tx_rdy               DC $minimal_handler
 int_uart_b_rx_rdy               DC $minimal_handler
 int_ehi                         DC $minimal_handler
-int_gpio                        DC $gpio_handler??
+int_gpio                        DC $minimal_handler
 int_adc                         DC $minimal_handler
 
                   ENDMOD
