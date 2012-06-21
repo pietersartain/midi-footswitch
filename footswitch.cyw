@@ -3,8 +3,8 @@
     <filesettings>
         <file>
             <name>${PROJECT_PATH}/footswitch.c</name>
-            <cursorlinenumber>108</cursorlinenumber>
-            <viewlinenumber>143</viewlinenumber>
+            <cursorlinenumber>87</cursorlinenumber>
+            <viewlinenumber>73</viewlinenumber>
         </file>
         <breakpoints/>
         <watcheditems>
