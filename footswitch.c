@@ -1,6 +1,19 @@
-/***************************************************************
-License goes here. Free for all?
-****************************************************************/
+/******************************************************************************
+http://tomlea.co.uk/WTFBPPL.txt
+*******************************************************************************
+DO WHAT THE FUCK YOU WANT TO + BEER/PIZZA PUBLIC LICENSE
+Version 1, May 2011
+
+Copyright (C) 2011 Tom Lea
+
+
+DO WHAT THE FUCK YOU WANT TO + BEER/PIZZA PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+0. You just DO WHAT THE FUCK YOU WANT TO.
+1. If you make a substantial amount of money by exercising clause 0,
+   you should consider buying the author a beer or a pizza.
+******************************************************************************/
 
 /*=============================================================================
 footswitch.c
@@ -18,14 +31,6 @@ Project level include files.
 #include <core_lib.h>
 
 /******************************************************************************
-Include files for public interfaces from other modules.
-******************************************************************************/
-
-/******************************************************************************
-Declaration of public functions.
-******************************************************************************/
-
-/******************************************************************************
 Private constants and types.
 ******************************************************************************/
 
@@ -39,22 +44,7 @@ enum
 };
 
 /******************************************************************************
-Declaration of static functions.
-******************************************************************************/
-
-/******************************************************************************
-Global variables.
-******************************************************************************/
-
-/******************************************************************************
-Module global variables.
-******************************************************************************/
-
-/******************************************************************************
-Definition of API functions.
-******************************************************************************/
-
-/******************************************************************************
+Main function / entry point
 ******************************************************************************/
 
 int main(int argc, char * argv[])
@@ -70,21 +60,22 @@ int main(int argc, char * argv[])
 	int channel    = 0x96; // channel 7
 	int vel_toggle = 0x01;
 	int velocity[2][10];
+	int TOP_RIGHT  = 5;
 	
-	int btn_cfg[10];	
+	int btn_cfg[10];
 
 	// Initialize button number output
-	btn_cfg[0] = 0x45;
-	btn_cfg[1] = 0x46;
-	btn_cfg[2] = 0x47;
-	btn_cfg[3] = 0x48;
-	btn_cfg[4] = 0x49;
+	btn_cfg[0] = 104;
+	btn_cfg[1] = 117;
+	btn_cfg[2] = 101;
+	btn_cfg[3] = 111;
+	btn_cfg[4] = 97;
 
-	btn_cfg[5] = 0x4A;
-	btn_cfg[6] = 0x4B;
-	btn_cfg[7] = 0x4C;
-	btn_cfg[8] = 0x4D;
-	btn_cfg[9] = 0x4E;
+	btn_cfg[5] = 103;
+	btn_cfg[6] = 112;
+	btn_cfg[7] = 46;
+	btn_cfg[8] = 44;
+	btn_cfg[9] = 39;
 	
 	// Initialize velocity
 	for (i = 0; i<10; i++) {
@@ -213,14 +204,14 @@ int main(int argc, char * argv[])
 // HW version mark II:
 /*
 	   /|\ (wire)
-  4  3  2  1  0      drive_line = 0
-  *  *  *  *  *
-  *  *  *  *  *
   9  8  7  6  5      drive_line = 1
+  *  *  *  *  *
+  *  *  *  *  *
+  4  3  2  1  0      drive_line = 0
 */
 
 			if (btn_state[i] == E_UP) {
-				if (i == 0) {
+				if (i == TOP_RIGHT) {
 					// Channel change button
 					if (channel == 0x96) {
 						channel = 0x97;
