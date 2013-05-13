@@ -31,7 +31,7 @@ ex_usart_b                      DC $minimal_handler
 ex_uart_a                       DC $minimal_handler
 ex_uart_b                       DC $minimal_handler
 int_tim_tmr_ufl                 DC $minimal_handler
-int_tim_cnt1_ufl                DC $minimal_handler
+int_tim_cnt1_ufl                DC $tick_handler??
 int_tim_cnt2_ufl                DC $minimal_handler
 int_tim_cnt1_match              DC $minimal_handler
 int_tim_cnt2_match              DC $minimal_handler

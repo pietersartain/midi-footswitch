@@ -2,9 +2,19 @@
     <version>1</version>
     <filesettings>
         <file>
+            <name>${PROJECT_PATH}/evalboard.cfg</name>
+            <cursorlinenumber>1</cursorlinenumber>
+            <viewlinenumber>1</viewlinenumber>
+        </file>
+        <file>
+            <name>${PROJECT_PATH}/irq.asm</name>
+            <cursorlinenumber>34</cursorlinenumber>
+            <viewlinenumber>10</viewlinenumber>
+        </file>
+        <file>
             <name>${PROJECT_PATH}/footswitch.c</name>
-            <cursorlinenumber>87</cursorlinenumber>
-            <viewlinenumber>73</viewlinenumber>
+            <cursorlinenumber>278</cursorlinenumber>
+            <viewlinenumber>186</viewlinenumber>
         </file>
         <breakpoints/>
         <watcheditems>
